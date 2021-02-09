@@ -1,21 +1,21 @@
 #include "holberton.h"
+
 /**
- * print_alphabet_x10 - Prints the alphabet in lowercase.
+ * print_alphabet_x10 - This function print alphabet x10
  *
  * Return: Always 0.
  */
-void print_alphabet_x10(void)
 
+void print_alphabet_x10(void)
 {
-	int i;
-	int n;
-        for (n = 0 ; n <= 9 ; n++)
+	int a, b;
+
+	for (a = 0; a <= 9 ; a++)
 	{
-		for (i = 'a' ; i <= 'z' ; i++)
+		for (b = 97; b <= 122; b++)
 		{
-			_putchar(i);
+			_putchar(b);
 		}
 		_putchar('\n');
 	}
-
 }
