@@ -1,14 +1,13 @@
 #include "holberton.h"
 
-int _isupper(int C)
+int _isupper(int c)
 {
-        if (C >= 'A' && C <= 'Z')
-        {
-                return (1);
-        }
-        else
-        {
-                return (0);
-        }
-        _putchar('\n');
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
