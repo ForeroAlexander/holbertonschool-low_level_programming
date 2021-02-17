@@ -1,8 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * rev_string :function that reverses a string.
- *@s pointer
+ * rev_string - function that reverses a string.
+ *@s: pointer
  * Return: Always 0. (sucess)
  */
 void rev_string(char *s)
@@ -12,7 +12,7 @@ void rev_string(char *s)
 	{
 
 		_putchar(*s);
-		s = s +1;
+		s = s + 1;
 	}
 	_putchar('\n');
 

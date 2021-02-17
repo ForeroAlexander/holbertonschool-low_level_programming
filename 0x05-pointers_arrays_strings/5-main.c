@@ -1,17 +1,57 @@
-#include "holberton.h"
 #include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * rev_string - Function
+ * @s: parameter
+ * Return: void
  */
-int main(void)
-{
-	char s[10] = "Holberton";
 
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
-	return (0);
+void rev_string(char *s)
+{
+	int x = 0;
+	int y = 0;
+	char recibe;
+
+	if (s[0] == '\0')
+	{
+		s = "\0";
+	}
+	else
+	{
+		y = (_strlen(s) - 1);
+
+		while (x < y)
+		{
+			recibe = s[x];
+			s[x] = s[y];
+			s[y] = recibe;
+			x++;
+			y--;
+		}
+	}
+}
+
+/**
+ * _strlen - Function
+ * @s: parameter
+ * Return: i
+ */
+
+int _strlen(char *s)
+{
+	int i = 1;
+
+	if (s[0] == '\0')
+	{
+		i = 0;
+	}
+	else
+	{
+		while (s[i] != '\0')
+		{
+			i++;
+		}
+	}
+	return (i);
 }
