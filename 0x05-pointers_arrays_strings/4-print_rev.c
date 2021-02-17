@@ -1,19 +1,23 @@
 #include "holberton.h"
 #include <stdio.h>
 
-int getLength(char *s)
-{
-	if(*s != '\0')
-		return (1 + getLenth(s + 1)):
-			return (0);
-}
 /**
- * print_rev: function that prints a string, in reverse, followed by a new line.
- *@s: pointer
+ * print_rev - prototipo
+ *@s: pointcater
  * Return: Always 0. (sucess)
  */
+
 void print_rev(char *s)
 {
-	printf("\"&s\" la longitud es %d\n", s, getLength(s));
+	int n, m;
 
+        for (n = 0; s[n] != '\0'; n++)
+        {
+                m = n;
+        }
+        for (; s[m] != '\0'; m--)
+        {
+                _putchar(s[m]);
+        }
+        _putchar('\n');
 }
