@@ -1,65 +1,27 @@
-#include <stdio.h>
-#include <unistd.h>
 #include "holberton.h"
-int _strlen(char *s);
 
 /**
- * puts_half - Function
- * @str: parameter
- * Return: void
+ *puts_half - function that prints half of a string, followed by a new line.
+ *
+ *@str: This is the input string
  */
 
 void puts_half(char *str)
 {
-	int longitud;
-	int mitad;
+	int a, b;
+	a = 0;
+	while (str[a] != '\0')
+		a++;
 
-	if (str[0] == '\0')
+	b = a / 2;
+
+	if (a % 2 == 1)
+		b++;
+
+	while (b < a)
 	{
-		str = "\0";
-	}
-	else
-	{
-		longitud = _strlen(str);
-
-		if ((longitud % 2) == 0)
-		{
-			mitad = longitud / 2;
-		}
-		else
-		{
-			mitad = ((longitud - 1) / 2);
-			mitad = mitad + 1;
-		}
-
-		while (str[mitad] != '\0')
-		{
-			_putchar(str[mitad]);
-			mitad++;
-		}
+		_putchar(str[b]);
+		b++;
 	}
 	_putchar('\n');
-}
-/**
- * _strlen - Function
- * @s: parameter
- * Return: i
- */
-
-int _strlen(char *s)
-{
-	int i = 1;
-
-	if (s[0] == '\0')
-	{
-		i = 0;
-	}
-	else
-	{
-		while (s[i] != '\0')
-		{
-			i++;
-		}
-	}
-	return (i);
 }
