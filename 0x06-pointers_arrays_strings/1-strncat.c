@@ -8,12 +8,13 @@
  */
 int length(char *dest)
 {
-	return ((*dest != '\0') ? 1 + length(dest +1) : 0);
+	return ((*dest != '\0') ? 1 + length(dest + 1) : 0);
 }
 /**
- *_strcat - Entry point
+ *_strncat - Entry point
  *@dest: pointer
  *@src: pointer
+ *@n: variab
  *Return: always 0 (sucess)
  */
 char *_strncat(char *dest, char *src, int n)
