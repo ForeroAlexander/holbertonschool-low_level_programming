@@ -4,7 +4,7 @@
 /**
  *length - Entry point
  *@dest: pointer
- *return: length (sucess)
+ *Return: length (sucess)
  */
 int length(char *dest)
 {

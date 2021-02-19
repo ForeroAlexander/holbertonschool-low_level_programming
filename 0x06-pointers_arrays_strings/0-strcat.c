@@ -2,13 +2,13 @@
 #include<stdio.h>
 
 /**
- *length - Entry point
+ *length - point
  *@dest: pointer
- *return: length (sucess)
+ *Return: length (sucess)
  */
 int length(char *dest)
 {
-	return ((*dest != '\0') ? 1 + length(dest +1) : 0);
+	return ((*dest != '\0') ? 1 + length(dest + 1) : 0);
 }
 /**
  *_strcat - Entry point
@@ -23,7 +23,7 @@ char *_strcat(char *dest, char *src)
 	while (*src != '\0')
 	{
 		*zero_itter = *src;
-		src = src +1;
+		src = src + 1;
 		zero_itter = zero_itter + 1;
 	}
 	*zero_itter = *src;
