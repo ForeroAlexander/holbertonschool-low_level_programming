@@ -9,10 +9,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (!f)
-		return;
-
-	if (!name)
+	if (!f || !name)
 		return;
 
 	f(name); /* (*f)(name) is the same and both is dereference */
