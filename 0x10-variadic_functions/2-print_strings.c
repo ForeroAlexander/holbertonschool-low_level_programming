@@ -22,6 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		tmp = va_arg(arg, char *);
 		tmp = tmp ? tmp : "(nil)";
+		separator = ((i + 1) == n) ? ("") : separator;
 		printf("%s%s", tmp, separator);
 	}
 	va_end(arg);
