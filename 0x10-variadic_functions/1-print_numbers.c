@@ -4,8 +4,9 @@
 #include <stdlib.h>
 /**
  * print_numbers - Entry point
- * @i: const unsigned int
- * Return: Always 0 (sucess)
+ * @n: const unsigned int
+ * Return: Always 0 (sucess
+ * @separator: string to be printed betwen numbers
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
