@@ -12,6 +12,7 @@ int main(void)
 {
 	int n1 = 48;
 	int n2;
+
 	while (n1 <= 57)
 	{
 		n2 = n1 + 1;
