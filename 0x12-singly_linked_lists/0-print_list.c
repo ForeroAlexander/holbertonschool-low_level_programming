@@ -1,10 +1,9 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * print_list - function that prints all the elements 
+ *print_list - function that prints all the elements
  *@h: node head of a own list
  *Return: always 0 (sucess)
- *
  */
 size_t print_list(const list_t *h)
 {
