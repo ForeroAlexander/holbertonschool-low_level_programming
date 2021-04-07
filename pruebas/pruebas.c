@@ -1,3 +1,3 @@
 #include<stdio.h>
 
-int maiin
+int maii
