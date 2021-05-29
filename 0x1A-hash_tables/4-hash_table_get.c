@@ -7,26 +7,21 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    unsigned int index;
-    hash_node_t *node;
+        hash_node_t *tmp;
 
-    if (!key || !ht || !ht->array)
-        return (0);
-    /* return key string "c" */
-    index = key_index(unsigned char *key ht->size);
-    /*node is point to the table in index position */
-    node = ht->array[index];
-    /* will go through to th end linked list*/
-    while (node != NULL)
-    {
-        /*compare value and if it's the same return value */
-        if (strcmp(node->key, key) == 0)
+        if (ht == NULL || key == NULL)
+                return (NULL);
+
+        tmp = ht->array[key_index((const unsigned char *)key, ht->size)];
+
+        while (tmp)
         {
-            /* return value of the key */
-            return (node->value);
+                if (strcmp(tmp->key, key) == 0)
+                        return (tmp->value);
+
+                tmp = tmp->next;
         }
-        /* next node */
-        node = node->next;
-    }
-    return (NULL);
+
+        return (NULL);
 }
+
